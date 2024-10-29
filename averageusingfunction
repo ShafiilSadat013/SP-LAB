@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+
+    float average(float x, float y,float z)
+    {
+        return (x+y+z)/3;
+    }
+
+    int main()
+    {
+        float a,b,c;
+        scanf("%f%f%f",&a,&b,&c);
+        float avg = average(a,b,c);
+        printf("%f",avg);
+        return 0;
+    }
