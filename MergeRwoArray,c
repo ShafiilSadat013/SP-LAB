@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,i,j;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    int arr1[a],arr2[b],x[a+b];
+    for(i=0;i<a;++i)
+    {
+        scanf("%d",&arr1[i]);
+    }
+    for(i=0;i<b;++i)
+    {
+        scanf("%d",&arr2[i]);
+    }
+    for(i=0;i<a;++i)
+    {
+        x[i]=arr1[i];
+    }
+    for(j=0;j<b;++j)
+    {
+        x[i+j]=arr2[j];
+    }
+    for(i=0;i<a+b;++i)
+    {
+        printf("%d ",x[i]);
+    }
+    printf("\n");
+    return 0;
+}
