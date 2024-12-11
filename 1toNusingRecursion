@@ -1,0 +1,17 @@
+// 1 to n recursion
+#include<stdio.h>
+void x(int n)
+{
+    if(n==0) return ;
+    x(n-1);
+    printf("%d ",n);
+}
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    x(a);
+    return 0;
+
+}
